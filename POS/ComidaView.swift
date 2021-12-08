@@ -9,53 +9,43 @@ import SwiftUI
 
 struct ComidaView: View {
     
+    let baseDeDatosDeComida : BaseDeDatosComida = BaseDeDatosComida()
+    
+    let comidas: [Comida] = [Comida(imagen: "Comida1",
+                                    nombre: "Spicy seasoned seafood noodles",
+                                    precio: 2.29,
+                                    ordenes: "\(20)Bowls available"),
+                             Comida(imagen: "Comida2",
+                                    nombre: "Healthy noodle with spinach leaf",
+                                    precio: 3.29,
+                                    ordenes: "\(20)Bowls available")
+    ]
+    
     var body: some View {
-        VStack{
+        ForEach(comidas, id: \.id){ comida in
             ZStack{
                 Image("Fondo")
                     .resizable()
                     .frame(width: 250, height: 300, alignment: .center)
                 VStack(alignment: .center, spacing: 10){
-                    Image("Comida1")
+                    Image(comida.imagen)
                         .resizable()
                         .frame(width: 150, height: 150)
                         .cornerRadius(80)
-                    Text("Spicy seasoned seafood noodles")
+                    Text(comida.nombre)
                         .font(.title2)
                         .foregroundColor(Color.white)
-                        .padding(4)
-                    Text("$2.29")
+                        .frame(width: 160, height: 70, alignment: .center)
+                    Text("$\(comida.precio)")
                         .font(.title3)
                         .foregroundColor(Color.white)
-                    Text("20Bowls available")
+                    Text(comida.ordenes)
                         .foregroundColor(Color.gray)
                         .padding()
                 }
                 .padding(39)
             }
-            
-            ZStack{
-                Image("Fondo")
-                    .resizable()
-                    .frame(width: 250, height: 300, alignment: .center)
-                VStack(alignment: .center, spacing: 10){
-                    Image("Comida2")
-                        .resizable()
-                        .frame(width: 150, height: 150)
-                        .cornerRadius(80)
-                    Text("Healthy noodle with spinach leaf")
-                        .font(.title2)
-                        .foregroundColor(Color.white)
-                        .padding(4)
-                    Text("$3.29")
-                        .font(.title3)
-                        .foregroundColor(Color.white)
-                    Text("20Bowls available")
-                        .foregroundColor(Color.gray)
-                        .padding()
-                }
-                .padding(39)
-            }
+
         }
     }
 }
