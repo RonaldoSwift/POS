@@ -16,6 +16,9 @@
 		FB09C4C3275F1A1E00F98928 /* POSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4C2275F1A1E00F98928 /* POSTests.swift */; };
 		FB09C4CD275F1A1F00F98928 /* POSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4CC275F1A1F00F98928 /* POSUITests.swift */; };
 		FB09C4CF275F1A1F00F98928 /* POSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4CE275F1A1F00F98928 /* POSUITestsLaunchTests.swift */; };
+		FB09C4E32761761800F98928 /* Comida.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4E22761761800F98928 /* Comida.swift */; };
+		FB09C4E52761762900F98928 /* BaseDeDatosComida.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4E42761762900F98928 /* BaseDeDatosComida.swift */; };
+		FB09C4E72761764D00F98928 /* ListaComidaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4E62761764D00F98928 /* ListaComidaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		FB09C4C8275F1A1E00F98928 /* POSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB09C4CC275F1A1F00F98928 /* POSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSUITests.swift; sourceTree = "<group>"; };
 		FB09C4CE275F1A1F00F98928 /* POSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB09C4E22761761800F98928 /* Comida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comida.swift; sourceTree = "<group>"; };
+		FB09C4E42761762900F98928 /* BaseDeDatosComida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDeDatosComida.swift; sourceTree = "<group>"; };
+		FB09C4E62761764D00F98928 /* ListaComidaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaComidaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				FB09C4B5275F1A1D00F98928 /* Persistence.swift */,
 				FB09C4B7275F1A1D00F98928 /* POS.xcdatamodeld */,
 				FB09C4B2275F1A1D00F98928 /* Preview Content */,
+				FB09C4E22761761800F98928 /* Comida.swift */,
+				FB09C4E42761762900F98928 /* BaseDeDatosComida.swift */,
+				FB09C4E62761764D00F98928 /* ListaComidaView.swift */,
 			);
 			path = POS;
 			sourceTree = "<group>";
@@ -263,9 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB09C4E72761764D00F98928 /* ListaComidaView.swift in Sources */,
+				FB09C4E32761761800F98928 /* Comida.swift in Sources */,
 				FB09C4B6275F1A1D00F98928 /* Persistence.swift in Sources */,
 				FB09C4AF275F1A1800F98928 /* ContentView.swift in Sources */,
 				FB09C4B9275F1A1D00F98928 /* POS.xcdatamodeld in Sources */,
+				FB09C4E52761762900F98928 /* BaseDeDatosComida.swift in Sources */,
 				FB09C4AD275F1A1800F98928 /* POSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
