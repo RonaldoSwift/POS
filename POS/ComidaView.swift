@@ -22,31 +22,43 @@ struct ComidaView: View {
     ]
     
     var body: some View {
-        ScrollView{
-            ForEach(comidas){ comida in
-                ZStack{
-                    Image("Fondo")
-                        .resizable()
-                        .frame(width: 250, height: 300, alignment: .center)
-                    VStack(alignment: .center, spacing: 10){
-                        Image(comida.imagen)
+        
+        NavigationView{
+            ScrollView{
+                ForEach(comidas){ comida in
+                    ZStack{
+                        Image("Fondo")
                             .resizable()
-                            .frame(width: 150, height: 150)
-                            .cornerRadius(80)
-                        Text(comida.nombre)
-                            .font(.title2)
-                            .foregroundColor(Color.white)
-                            .frame(width: 160, height: 70, alignment: .center)
-                        Text("$\(comida.precio)")
-                            .font(.title3)
-                            .foregroundColor(Color.white)
-                        Text(comida.ordenes)
-                            .foregroundColor(Color.gray)
-                            .padding()
+                            .frame(width: 250, height: 300, alignment: .center)
+                        VStack(alignment: .center, spacing: 10){
+                            Image(comida.imagen)
+                                .resizable()
+                                .frame(width: 150, height: 150)
+                                .cornerRadius(80)
+                            Text(comida.nombre)
+                                .font(.title2)
+                                .foregroundColor(Color.white)
+                                .frame(width: 160, height: 70, alignment: .center)
+                            Text("$\(comida.precio)")
+                                .font(.title3)
+                                .foregroundColor(Color.white)
+                            Text(comida.ordenes)
+                                .foregroundColor(Color.gray)
+                                .padding()
+                        }
+                        .padding(39)
                     }
-                    .padding(39)
                 }
             }
+            .navigationBarTitle("Comidas")
+            .navigationBarItems(leading: Button("Demo", action: {
+                print("Probando probando...")
+            }), trailing: NavigationLink {
+                FoodView()
+            } label: {
+                Text("Siguiente")
+            }
+            )
         }
     }
 }
