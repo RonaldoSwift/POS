@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Comida{
+struct Comida: Identifiable {
     
     let id = UUID()
     let imagen : String

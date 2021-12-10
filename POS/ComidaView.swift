@@ -18,34 +18,35 @@ struct ComidaView: View {
                              Comida(imagen: "Comida2",
                                     nombre: "Healthy noodle with spinach leaf",
                                     precio: 3.29,
-                                    ordenes: "\(20)Bowls available")
+                                    ordenes: "\(20) Bowls available")
     ]
     
     var body: some View {
-        ForEach(comidas, id: \.id){ comida in
-            ZStack{
-                Image("Fondo")
-                    .resizable()
-                    .frame(width: 250, height: 300, alignment: .center)
-                VStack(alignment: .center, spacing: 10){
-                    Image(comida.imagen)
+        ScrollView{
+            ForEach(comidas){ comida in
+                ZStack{
+                    Image("Fondo")
                         .resizable()
-                        .frame(width: 150, height: 150)
-                        .cornerRadius(80)
-                    Text(comida.nombre)
-                        .font(.title2)
-                        .foregroundColor(Color.white)
-                        .frame(width: 160, height: 70, alignment: .center)
-                    Text("$\(comida.precio)")
-                        .font(.title3)
-                        .foregroundColor(Color.white)
-                    Text(comida.ordenes)
-                        .foregroundColor(Color.gray)
-                        .padding()
+                        .frame(width: 250, height: 300, alignment: .center)
+                    VStack(alignment: .center, spacing: 10){
+                        Image(comida.imagen)
+                            .resizable()
+                            .frame(width: 150, height: 150)
+                            .cornerRadius(80)
+                        Text(comida.nombre)
+                            .font(.title2)
+                            .foregroundColor(Color.white)
+                            .frame(width: 160, height: 70, alignment: .center)
+                        Text("$\(comida.precio)")
+                            .font(.title3)
+                            .foregroundColor(Color.white)
+                        Text(comida.ordenes)
+                            .foregroundColor(Color.gray)
+                            .padding()
+                    }
+                    .padding(39)
                 }
-                .padding(39)
             }
-
         }
     }
 }
