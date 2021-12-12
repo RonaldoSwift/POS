@@ -12,5 +12,6 @@ struct Comida{
     let imagen : String
     let nombre : String
     let precio : Double
+    let cantidad : Double
     let ordenes : String
 }

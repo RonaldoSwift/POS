@@ -18,7 +18,7 @@
 		FB09C4CF275F1A1F00F98928 /* POSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4CE275F1A1F00F98928 /* POSUITestsLaunchTests.swift */; };
 		FB09C4E32761761800F98928 /* Comida.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4E22761761800F98928 /* Comida.swift */; };
 		FB09C4E52761762900F98928 /* BaseDeDatosComida.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4E42761762900F98928 /* BaseDeDatosComida.swift */; };
-		FB09C4E72761764D00F98928 /* ListaComidaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4E62761764D00F98928 /* ListaComidaView.swift */; };
+		FB09C4E72761764D00F98928 /* CarritoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4E62761764D00F98928 /* CarritoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +53,7 @@
 		FB09C4CE275F1A1F00F98928 /* POSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FB09C4E22761761800F98928 /* Comida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comida.swift; sourceTree = "<group>"; };
 		FB09C4E42761762900F98928 /* BaseDeDatosComida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDeDatosComida.swift; sourceTree = "<group>"; };
-		FB09C4E62761764D00F98928 /* ListaComidaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaComidaView.swift; sourceTree = "<group>"; };
+		FB09C4E62761764D00F98928 /* CarritoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 				FB09C4B2275F1A1D00F98928 /* Preview Content */,
 				FB09C4E22761761800F98928 /* Comida.swift */,
 				FB09C4E42761762900F98928 /* BaseDeDatosComida.swift */,
-				FB09C4E62761764D00F98928 /* ListaComidaView.swift */,
+				FB09C4E62761764D00F98928 /* CarritoView.swift */,
 			);
 			path = POS;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB09C4E72761764D00F98928 /* ListaComidaView.swift in Sources */,
+				FB09C4E72761764D00F98928 /* CarritoView.swift in Sources */,
 				FB09C4E32761761800F98928 /* Comida.swift in Sources */,
 				FB09C4B6275F1A1D00F98928 /* Persistence.swift in Sources */,
 				FB09C4AF275F1A1800F98928 /* ContentView.swift in Sources */,
