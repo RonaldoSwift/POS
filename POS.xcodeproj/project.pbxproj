@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BB39D46275F2EA40033E816 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB39D45275F2EA40033E816 /* FoodView.swift */; };
 		FB09C4AD275F1A1800F98928 /* POSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4AC275F1A1800F98928 /* POSApp.swift */; };
 		FB09C4AF275F1A1800F98928 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4AE275F1A1800F98928 /* ContentView.swift */; };
 		FB09C4B1275F1A1D00F98928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB09C4B0275F1A1D00F98928 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		FB09C4E32761761800F98928 /* Comida.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4E22761761800F98928 /* Comida.swift */; };
 		FB09C4E52761762900F98928 /* BaseDeDatosComida.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4E42761762900F98928 /* BaseDeDatosComida.swift */; };
 		FB09C4E72761764D00F98928 /* CarritoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4E62761764D00F98928 /* CarritoView.swift */; };
+		FB09C4DC275F1E8B00F98928 /* ComidaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4DB275F1E8B00F98928 /* ComidaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BB39D45275F2EA40033E816 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
+		2BBFA7E1275FA20700DF7531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FB09C4A9275F1A1800F98928 /* POS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB09C4AC275F1A1800F98928 /* POSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSApp.swift; sourceTree = "<group>"; };
 		FB09C4AE275F1A1800F98928 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 		FB09C4E22761761800F98928 /* Comida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comida.swift; sourceTree = "<group>"; };
 		FB09C4E42761762900F98928 /* BaseDeDatosComida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDeDatosComida.swift; sourceTree = "<group>"; };
 		FB09C4E62761764D00F98928 /* CarritoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoView.swift; sourceTree = "<group>"; };
+		FB09C4DB275F1E8B00F98928 /* ComidaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BB39D42275F2CDB0033E816 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2BB39D43275F2D380033E816 /* Features */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2BB39D43275F2D380033E816 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2BB39D44275F2E230033E816 /* Food */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2BB39D44275F2E230033E816 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				2BB39D45275F2EA40033E816 /* FoodView.swift */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
 		FB09C4A0275F1A1800F98928 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +133,8 @@
 		FB09C4AB275F1A1800F98928 /* POS */ = {
 			isa = PBXGroup;
 			children = (
+				2BBFA7E1275FA20700DF7531 /* Info.plist */,
+				2BB39D42275F2CDB0033E816 /* Presentation */,
 				FB09C4AC275F1A1800F98928 /* POSApp.swift */,
 				FB09C4AE275F1A1800F98928 /* ContentView.swift */,
 				FB09C4B0275F1A1D00F98928 /* Assets.xcassets */,
@@ -113,6 +144,7 @@
 				FB09C4E22761761800F98928 /* Comida.swift */,
 				FB09C4E42761762900F98928 /* BaseDeDatosComida.swift */,
 				FB09C4E62761764D00F98928 /* CarritoView.swift */,
+				FB09C4DB275F1E8B00F98928 /* ComidaView.swift */,
 			);
 			path = POS;
 			sourceTree = "<group>";
@@ -275,9 +307,11 @@
 				FB09C4E72761764D00F98928 /* CarritoView.swift in Sources */,
 				FB09C4E32761761800F98928 /* Comida.swift in Sources */,
 				FB09C4B6275F1A1D00F98928 /* Persistence.swift in Sources */,
+				2BB39D46275F2EA40033E816 /* FoodView.swift in Sources */,
 				FB09C4AF275F1A1800F98928 /* ContentView.swift in Sources */,
 				FB09C4B9275F1A1D00F98928 /* POS.xcdatamodeld in Sources */,
 				FB09C4E52761762900F98928 /* BaseDeDatosComida.swift in Sources */,
+				FB09C4DC275F1E8B00F98928 /* ComidaView.swift in Sources */,
 				FB09C4AD275F1A1800F98928 /* POSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,9 +476,9 @@
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = POS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,9 +505,9 @@
 				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = POS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
