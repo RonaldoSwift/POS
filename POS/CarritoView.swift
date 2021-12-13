@@ -29,7 +29,8 @@ struct CarritoView: View {
     ]
     
     var body: some View {
-        List{
+        
+        ScrollView{
             ForEach(comidas, id: \.id){ comida in
                 HStack{
                     VStack{
@@ -74,6 +75,15 @@ struct CarritoView: View {
                 }
             }
         }
+        .navigationBarTitle("Carrito de compras")
+        .navigationBarItems(leading: Button("Demo", action: {
+            print("Probando probando...")
+        }), trailing: NavigationLink {
+            FoodView()
+        } label: {
+            Text("Siguiente")
+        }
+        )
     }
 }
 

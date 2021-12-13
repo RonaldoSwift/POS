@@ -14,10 +14,12 @@ struct ComidaView: View {
     let comidas: [Comida] = [Comida(imagen: "Comida1",
                                     nombre: "Spicy seasoned seafood noodles",
                                     precio: 2.29,
+                                    cantidad: 2.0,
                                     ordenes: "\(20)Bowls available"),
                              Comida(imagen: "Comida2",
                                     nombre: "Healthy noodle with spinach leaf",
                                     precio: 3.29,
+                                    cantidad: 2.0,
                                     ordenes: "\(20) Bowls available")
     ]
     
@@ -54,7 +56,7 @@ struct ComidaView: View {
             .navigationBarItems(leading: Button("Demo", action: {
                 print("Probando probando...")
             }), trailing: NavigationLink {
-                FoodView()
+                CarritoView()
             } label: {
                 Text("Siguiente")
             }
