@@ -19,7 +19,8 @@ struct PagosView: View {
     
     
     var body: some View {
-        NavigationView{
+        
+        ScrollView{
             VStack(alignment: .leading){
                 
                 HStack(alignment: .center, spacing: 30){
@@ -137,9 +138,11 @@ struct PagosView: View {
                     }
                 }
             }
-            .navigationBarTitle("Payment", displayMode: .large)
-            .background(Color("ColorFondoDePantalla"))
         }
+        
+        .navigationBarTitle("Payment", displayMode: .large)
+        .background(Color("ColorFondoDePantalla"))
+        
     }
 }
 

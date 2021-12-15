@@ -79,7 +79,7 @@ struct CarritoView: View {
         .navigationBarItems(leading: Button("Demo", action: {
             print("Probando probando...")
         }), trailing: NavigationLink {
-            FoodView()
+            PagosView()
         } label: {
             Text("Siguiente")
         }
