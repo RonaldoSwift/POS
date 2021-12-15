@@ -13,7 +13,7 @@ struct POSApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ComidaView()
+            PagosView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

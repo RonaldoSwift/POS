@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct PagosView: View {
+    
+    @State private var nombre: String = ""
+    @State private var cvv: String = ""
+    @State private var NumeroDeTarjeta: String = ""
+    @State private var datoDeExpiracion: String = ""
+    @State private var tipoDeOrden: String = ""
+    @State private var tableNo: String = ""
+    
+    
+    
     var body: some View {
         NavigationView{
-            VStack(alignment: .center){
+            VStack(alignment: .leading){
                 
-                Text("Payment Method                       ")
-                    .font(.title)
-                    .bold()
-                
-                HStack{
+                HStack(alignment: .center, spacing: 30){
                     Button {
                         
                     } label: {
@@ -53,57 +59,64 @@ struct PagosView: View {
                     .border(Color("ColorDeBordeDeDescripcion"),width: 1)
                     .cornerRadius(8)
                 }
+                .padding()
                 
-                Text("Cardholder Name                                              ")
-                Text("Levi Ackerman                                                ")
+                Text("   Cardholder Name")
+                TextField("Levi Ackerman ", text: $nombre)
                     .padding()
                     .background(Color("ColorDeBordeDeDescripcion"))
                     .cornerRadius(8)
+                    .padding()
                 
-                Text("Card Number                                                   ")
-                Text("2564 1421 0897 1244                                   ")
+                Text("    Card Number")
+                TextField("2564 1421 0897 1244 ", text: $NumeroDeTarjeta)
                     .padding()
                     .background(Color("ColorDeBordeDeDescripcion"))
                     .cornerRadius(8)
+                    .padding()
                 
-                HStack(spacing: 20){
+                HStack(spacing: 5){
                     VStack(alignment: .leading){
-                        Text("Expiration Date")
-                        Text(" 02/2022              ")
+                        Text("    Expiration Date")
+                        TextField(" 02/2022", text: $datoDeExpiracion)
                             .padding()
                             .background(Color("ColorDeBordeDeDescripcion"))
                             .border(Color("ColorDeBordeDeDescripcion"),width: 1)
                             .cornerRadius(8)
+                            .padding()
                     }
                     VStack(alignment: .leading){
-                        Text("CVV")
-                        Text("⬤⬤⬤                ")
+                        Text("    CVV")
+                        TextField("⬤⬤⬤", text: $cvv)
                             .padding()
                             .foregroundColor(Color.white)
                             .background(Color("ColorDeBordeDeDescripcion"))
                             .cornerRadius(8)
+                            .padding()
                     }
                 }
                 
-                HStack(spacing: 20){
+                HStack(spacing: 5){
                     VStack(alignment: .leading){
-                        Text("Order Type")
-                        Text(" Dine In                 ")
+                        Text("    Order Type")
+                        TextField(" Dine In", text: $tipoDeOrden)
                             .padding()
                             .border(Color("ColorDeBordeDeDescripcion"),width: 1)
                             .cornerRadius(8)
+                            .padding()
                     }
                     VStack(alignment: .leading){
-                        Text("Table no.")
-                        Text("140                        ")
+                        Text("   Table no.")
+                        TextField("140", text: $tableNo)
                             .padding()
                             .foregroundColor(Color.white)
                             .background(Color("ColorDeBordeDeDescripcion"))
                             .cornerRadius(8)
+                            .padding()
                     }
                 }
                 
-                HStack(spacing: 20){
+                HStack(spacing: 5){
                     Button {
                     } label: {
                         Text("Cancel                  ")
@@ -111,14 +124,16 @@ struct PagosView: View {
                             .foregroundColor(Color("ColorDeBotonDeConfirmacion"))
                             .border(Color("ColorDeBotonDeConfirmacion"),width: 1)
                             .cornerRadius(8)
+                            .padding()
                     }
                     Button {
                     } label: {
-                        Text("Confirm Payment")
+                        Text("Confirm Payment   ")
                             .padding()
                             .foregroundColor(Color.white)
                             .background(Color("ColorDeBotonDeConfirmacion"))
                             .cornerRadius(8)
+                        
                     }
                 }
             }
