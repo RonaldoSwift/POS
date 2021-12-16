@@ -16,8 +16,6 @@ struct PagosView: View {
     @State private var tipoDeOrden: String = ""
     @State private var tableNo: String = ""
     
-    
-    
     var body: some View {
         
         ScrollView{
