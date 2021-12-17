@@ -10,9 +10,6 @@ import SwiftUI
 struct AgradecimientoView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 10){
-            
-            
-            
             Text("Thank you for ordering!")
                 .foregroundColor(Color.green)
                 .font(.title2)
@@ -24,8 +21,9 @@ struct AgradecimientoView: View {
                 Text("We habe assingned delivery executive to your rder. It takes 30 mins to deliver for the order to arrive.")
                 Button {
                 } label: {
-                    Text("Track my order                      ")
+                    Text("Track my order")
                         .padding()
+                        .frame(minWidth: 100, maxWidth: .infinity, minHeight: 44)
                         .foregroundColor(Color.white)
                         .background(Color("ColorDeBoton"))
                         .cornerRadius(8)
