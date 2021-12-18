@@ -22,6 +22,7 @@
 		FB09C4E52761762900F98928 /* BaseDeDatosComida.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4E42761762900F98928 /* BaseDeDatosComida.swift */; };
 		FB09C4E72761764D00F98928 /* CarritoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB09C4E62761764D00F98928 /* CarritoView.swift */; };
 		FB2F32D7276839C9008D5E61 /* PagosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2F32D6276839C9008D5E61 /* PagosView.swift */; };
+		FBD94A69276AD968000F347D /* AgradecimientoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD94A68276AD968000F347D /* AgradecimientoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		FB09C4E42761762900F98928 /* BaseDeDatosComida.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDeDatosComida.swift; sourceTree = "<group>"; };
 		FB09C4E62761764D00F98928 /* CarritoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoView.swift; sourceTree = "<group>"; };
 		FB2F32D6276839C9008D5E61 /* PagosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagosView.swift; sourceTree = "<group>"; };
+		FBD94A68276AD968000F347D /* AgradecimientoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgradecimientoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				FB09C4E62761764D00F98928 /* CarritoView.swift */,
 				FB09C4DB275F1E8B00F98928 /* ComidaView.swift */,
 				FB2F32D6276839C9008D5E61 /* PagosView.swift */,
+				FBD94A68276AD968000F347D /* AgradecimientoView.swift */,
 			);
 			path = POS;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			files = (
 				FB09C4E72761764D00F98928 /* CarritoView.swift in Sources */,
 				FB09C4E32761761800F98928 /* Comida.swift in Sources */,
+				FBD94A69276AD968000F347D /* AgradecimientoView.swift in Sources */,
 				FB09C4B6275F1A1D00F98928 /* Persistence.swift in Sources */,
 				2BB39D46275F2EA40033E816 /* FoodView.swift in Sources */,
 				FB09C4AF275F1A1800F98928 /* ContentView.swift in Sources */,
